@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu Portfólio</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <style>
+            body {
+                padding-top: 56px;
+            }
+
+            section {
+                scroll-margin-top: 70px;
+            }
+
+            .foto {
+                height: 14.5rem;
+            }
+
+            .foto img {
+                border-radius: 50%;
+            }
+
+            .linguagens {
+                font-family: Arial, sans-serif;
+            }
+
+            .navbar {
+                transition: background-color 0.3s ease;
+            }
+
+            .github-icon {
+                color: #ffffff; /* GitHub (branco funciona melhor em footer escuro) */
+            }
+
+            .whatsapp-icon {
+                color: #25D366; /* WhatsApp */
+            }
+
+            .bi-instagram{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+
+            footer a:hover {
+                opacity: 0.8;
+                transition: 0.3s;
+            }
+
+            .card img {
+                height: 230px;
+                object-fit: contain;
+                border-top-left-radius: 12%;
+                border-top-right-radius: 12%;
+                border-bottom-left-radius: 12%;
+                border-bottom-right-radius: 12%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- NAVBAR -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Meu Portfólio</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto align-items-center gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+
+                        <!-- BOTÃO DARK MODE -->
+                        <li class="nav-item">
+                            <button id="themeToggle" class="btn btn-outline-light btn-sm">
+                                🌙 Dark
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- FOTO -->
+        <section id="inicio">
+            <div class="foto container-fluid text-center mt-2 bg-secondary-subtle">
+                <img src="https://img.freepik.com/vetores-premium/lorem-ipsum-logo-design-gradiente-colorido_779267-18.jpg" width="230">
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <header id="sobre">
+            <div class="linguagens container my-5">
+                <h2>Quem sou eu?</h2>
+                <p>
+                    Me chamo <strong>Lewi Eliézer de Deus</strong>, tenho 18 anos e sou formado pela
+                    ETEC (Escola Técnica Estadual). Atualmente resido em Guararapes – SP.
+                    Estou em início de carreira na área de desenvolvimento de software e busco
+                    minha primeira oportunidade profissional como Desenvolvedor Front-End ou Full-Stack.
+                    Sou proativo, dedicado e possuo disponibilidade para trabalho remoto (home office),
+                    sempre buscando aprender novas tecnologias e evoluir profissionalmente.
+                </p>
+            </div>
+        </header>
+
+        <!-- LINGUAGENS -->
+        <section>
+            <div class="container text-center my-4">
+                <h1><b>Linguagens de Programação</b></h1>
+            </div>
+
+            <div class="container d-flex justify-content-center flex-wrap gap-4">
+                <div class="card" style="width: 15rem;">
+                    <img src="data:image/png;base64,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" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML</h5>
+                        <p class="card-text">Estruturação de páginas web.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 15rem;">
+                    <img src="1.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS</h5>
+                        <p class="card-text">Estilização e layout responsivo.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 15rem;">
+                    <img src="3.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">SQL</h5>
+                        <p class="card-text">Banco de dados relacional.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 15rem;">
+                    <img src="4.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">PHP</h5>
+                        <p class="card-text">Linguagem de programação server-side.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FRAMEWORKS -->
+        <section>
+            <div class="container text-center my-5">
+                <h1><b>Frameworks</b></h1>
+            </div>
+
+            <div class="container d-flex justify-content-center flex-wrap gap-4">
+                <div class="card" style="width: 15rem;">
+                    <img src="5.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap</h5>
+                        <p class="card-text">Layout rápido e responsivo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contato" class="py-3 mt-4 bg-dark text-light text-center">
+            <div class="mb-2">
+                <a href="https://github.com/SEU_USUARIO" target="_blank" class="fs-4 mx-2">
+                    <i class="bi bi-github github-icon"></i>
+                </a>
+
+                <a href="https://wa.me/55SEUNUMERO" target="_blank" class="fs-4 mx-2">
+                    <i class="bi bi-whatsapp whatsapp-icon"></i>
+                </a>
+
+                <a href="https://instagram.com/SEU_USUARIO" target="_blank" class="fs-4 mx-2">
+                    <i class="bi bi-instagram instagram-icon"></i>
+                </a>
+            </div>
+
+            <div>
+                <p>Email: <a href="mailto:lewidedeus@gmail.com">lewidedeus@gmail.com</a></p>
+            </div>
+
+            <div>
+                © 2026 - Lewi Eliézer de Deus
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- DARK MODE SCRIPT -->
+        <script>
+        const toggle = document.getElementById("themeToggle");
+        const html = document.documentElement;
+        const navbar = document.getElementById("navbar");
+
+        function applyTheme(theme) {
+            html.setAttribute("data-bs-theme", theme);
+
+            if (theme === "dark") {
+                navbar.classList.remove("bg-dark");
+                navbar.classList.add("bg-black");
+                toggle.innerText = "☀️ Light";
+            } else {
+                navbar.classList.remove("bg-black");
+                navbar.classList.add("bg-dark");
+                toggle.innerText = "🌙 Dark";
+            }
+
+            localStorage.setItem("theme", theme);
+        }
+
+        // Tema salvo
+        const savedTheme = localStorage.getItem("theme") || "light";
+        applyTheme(savedTheme);
+
+        // Alternar tema
+        toggle.addEventListener("click", () => {
+            const current = html.getAttribute("data-bs-theme");
+            applyTheme(current === "dark" ? "light" : "dark");
+        });
+        </script>
+    </body>
+</html>
